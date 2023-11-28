@@ -5,8 +5,8 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-    // baseUrl: "https://magento.softwaretestingboard.com/",
-    baseUrl: "https://demo.productionready.io/#/",
+    baseUrl: "https://magento.softwaretestingboard.com/",
+    // baseUrl: "https://demo.productionready.io/#/",
     force: true
   },
 });
