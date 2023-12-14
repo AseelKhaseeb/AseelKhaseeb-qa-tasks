@@ -1,0 +1,8 @@
+{
+  "email": "admin@yourstore.com",
+  "password": "admin",
+  "products":[
+    {"product":"Laptop123","price":"3000"},
+    {"product":"Laptop12345","price":"4000"}
+  ]
+}
