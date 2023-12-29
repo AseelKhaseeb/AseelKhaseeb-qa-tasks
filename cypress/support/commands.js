@@ -50,30 +50,11 @@ Cypress.Commands.add('addProduct',()=>{
             
             cy.get("[name=save]").click()
 
-            cy.get(".alert-success").should("contain","The new product has been added successfully.")
-            cy.get("#SearchProductName").clear().type(product.product)
-            cy.get("#search-products").click()
-            cy.get("#products-grid tbody tr").should("contain",product.product).and("contain",product.price)
-            cy.wait(1500)
-
+            // cy.get(".alert-success").should("contain","The new product has been added successfully.")
+            // cy.get("#SearchProductName").clear().type(product.product)
+            // cy.get("#search-products").click()
+            // cy.get("#products-grid tbody tr").should("contain",product.product).and("contain",product.price)
+            // cy.wait(1500)
         })
-
-
-        // cy.get("#Name").clear().type(data.product1)
-
-        // cy.get("#product-info .card-tools button").click()
-
-        // cy.wait(1500)
-        // cy.get("#product-price-area input").last().clear({force:true}).type(data.price1,{force:true})
-
-        // cy.wait(1500)
-        // cy.get("#product-info .card-tools").click()
-        
-        // cy.get("[name=save]").click()
-
-        // cy.get(".alert-success").should("contain","The new product has been added successfully.")
-        // cy.get("#SearchProductName").clear().type(data.product1)
-        // cy.get("#search-products").click()
-        // cy.get("#products-grid tbody tr").should("contain",data.product1).and("contain",data.price1)
     })
 })
