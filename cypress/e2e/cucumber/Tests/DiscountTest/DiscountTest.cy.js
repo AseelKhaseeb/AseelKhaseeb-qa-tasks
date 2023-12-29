@@ -43,7 +43,7 @@ When("Click on Add new link",()=>{
     cy.contains("Add new").click()
 })
 
-When("Enter Name input field",()=>{
+When("Enter Discount Name input field",()=>{
     cy.get("#Name").clear().type("Discount1")
 })
 
