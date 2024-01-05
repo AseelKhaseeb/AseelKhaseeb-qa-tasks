@@ -13,7 +13,7 @@ Feature: Check add discount functionallity
         And Click on Promotions link
         And Click on Discounts link
         And Click on Add new link
-        And Enter Discount Name input field
+        And Enter Name input field
         And Select Discount type
         # And Check Use percentage
         And Enter discount amount

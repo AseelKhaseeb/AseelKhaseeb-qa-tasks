@@ -43,7 +43,7 @@ When("Click on Add new link",()=>{
     cy.contains("Add new").click()
 })
 
-When("Enter Discount Name input field",()=>{
+When("Enter Name input field",()=>{
     cy.get("#Name").clear().type("Discount1")
 })
 
@@ -56,7 +56,9 @@ When("Select Discount type",()=>{
 // })
 
 When("Enter discount amount",()=>{
-    cy.get("#DiscountAmount").clear({force:true}).type(100,{force:true})
+    // cy.get("#DiscountAmount").clear({force:true}).type(100,{force:true})
+    cy.get("#pnlDiscountAmount [role=spinbutton]:nth-child(1)").type(100)
+    // cy.get("#pnlDiscountAmount [role=spinbutton]:nth-child(1)").clear({force:true}).type(100,{force:true})
 })
 
 When("Check Requires coupon code",()=>{
